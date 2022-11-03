@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="h-screen homeSection flex flex-col">
+        <header class="flex items-center justify-between border-b drop-shadow-lg border-purple-800 bg-slate-200">
+            <a href="/">
+                <div class="container flex items-center ml-4 basis-1/2">
+                    <img src="" alt="LOGO" class="w-16 mr-4">
+                    <img src="" alt="LOGO TXT" class="w-16">
+                </div>
+            </a>
+            <nav class="basis-1/2">
+                <ul class="flex items-center justify-center">
+                    <li class="text-base w-full text-center hover:scale-110 hover:text-purple-500 transition-all"><a href="">Courses</a></li>
+                    <li class="text-base w-full text-center hover:scale-110 hover:text-purple-500 transition-all"><a href="">Events</a></li>
+                    <li class="text-base w-full text-center hover:scale-110 hover:text-purple-500 transition-all"><a href="">About Us</a></li>
+                    <li class="text-base w-full text-center mr-4 hover:scale-110 hover:text-purple-500 transition-all"><a href="/register">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container w-fit px-16 py-12 bg-slate-200 absolute LoginForm rounded-md">
+            <h1 class="text-center text-xl font-bold mb-8 border-b border-black">Login</h1>
+            <form action="/login" method="post" class="flex flex-col">
+                <label for="email" class="text-xs">Email</label>
+                <input type="email" name="username" id="emailInput" class="mb-2 rounded-sm">
+                <label for="password" class="text-xs">Password</label>
+                <input type="password" name="password" id="passwordInput" class="mb-4 rounded-sm">
+                <button type="submit" class="rounded-md border border-slate-400 hover:text-white hover:bg-sky-400 hover:scale-105 px-4 py-2 transition-all">Submit</button>
+            </form>
+            <h1 class="text-center text-base mt-4"><span>Don't have an account?</span><br><a href="/register" class="text-blue-700">Register an Account</a></h1>
+        </div>
+</body>
+</html>

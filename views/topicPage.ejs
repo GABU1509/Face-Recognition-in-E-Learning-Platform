@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Data Science</title>
+</head>
+<body>
+    <section class="h-screen homeSection flex flex-col">
+        <header class="flex items-center justify-between border-b drop-shadow-lg border-purple-800 bg-slate-200">
+            <a href="/">
+                <div class="container flex items-center ml-4 basis-1/2">
+                    <img src="" alt="LOGO" class="w-16 mr-4">
+                    <img src="" alt="LOGO TXT" class="w-16">
+                </div>
+            </a>
+            <nav class="basis-1/2">
+                <ul class="flex items-center justify-center">
+                    <li class="text-base w-full text-center"><a href="">Courses</a></li>
+                    <li class="text-base w-full text-center"><a href="">Events</a></li>
+                    <li class="text-base w-full text-center"><a href="">About Us</a></li>
+                    <li class="text-base w-full text-center"><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="flex align-center mt-8 ml-8">
+            <a href="/userDash"><img src="assets/back.png" alt="" class="w-8 hover:scale-105 transition-all"></a>
+            <h1 class="ml-4 text-white text-2xl">Topic 1</h1>
+        </div>
+        <div class="flex mx-16 mt-16">
+            <div class="basis-2/3">
+                <iframe src="https://www.youtube.com/embed/QnDIY-nRHPw" frameborder="0" class="w-5/6 h-96" id="video"></iframe>
+            </div>
+            
+            <div class="basis-1/3 flex flex-col align-center justify-center" id="contents">
+                <div class="bg-slate-400">
+                    <h1 class="text-white text-2xl text-center p-4">Course Contents</h1>
+                </div>
+                <ul>
+                    <li class="border border-slate-200 p-4 hover:bg-slate-500 transition-all hover:text-white">BFS</li>
+                    <li class="border border-slate-200 p-4 hover:bg-slate-500 transition-all hover:text-white">DFS</li>
+                    <li class="border border-slate-200 p-4 hover:bg-slate-500 transition-all hover:text-white">A*</li>
+                    <li class="border border-slate-200 p-4 hover:bg-slate-500 transition-all hover:text-white">Min Max</li>
+                    <li class="border border-slate-200 p-4 hover:bg-slate-500 transition-all hover:text-white">Alpha Beta</li>
+                    <li class="border border-slate-200 p-4 hover:bg-slate-500 transition-all hover:text-white">State Space Search</li>
+                    <li class="border border-slate-200 p-4 hover:bg-slate-500 transition-all hover:text-white">Alpha Beta</li>
+                    <li class="border border-slate-200 p-4 hover:bg-slate-500 transition-all hover:text-white">Uninformed and Informed</li>
+                </ul>
+            </div>
+        </div>
+    <script src="scripts/topicChange.js"></script>
+    </section>
+</body>
+</html>
